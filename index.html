@@ -3,48 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Modern Website</title>
-  <!-- Links the CSS file to style the page -->
+  <title>dev@portfolio:~$</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">BrandName</div>
+    <div class="logo"><span class="pink">&gt;_</span> sys.dev</div>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <button id="theme-toggle" class="btn-outline">Dark Mode</button>
+      <a href="#projects">// projects</a>
+      <a href="#stack">// stack</a>
+      <a href="#contact" class="btn-neon-pink">ping_me</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Build Something Clean & Fast</h1>
-      <p>A simple, responsive starter template using pure HTML, CSS, and JavaScript.</p>
-      <button id="cta-btn" class="btn-primary">Get Started</button>
+      <div class="status-badge">
+        <span class="pulse-dot"></span> SYSTEM ONLINE // OPEN TO WORK
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">Alex Mercer</span></h1>
+      <p class="terminal-line">
+        <span class="blue">$</span> <span id="typewriter"></span><span class="cursor">_</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-neon-blue">View_Builds()</a>
+        <a href="https://github.com" target="_blank" class="btn-outline">GitHub</a>
+      </div>
     </section>
 
-    <section id="features" class="grid-container">
-      <div class="card">
-        <h3>Clean Structure</h3>
-        <p>Semantic HTML5 tags keep your content organized and accessible.</p>
+    <section id="stack" class="stack-section">
+      <h2><span class="pink">#</span> TECH_STACK</h2>
+      <div class="tags">
+        <span class="tag">TypeScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Python</span>
+        <span class="tag">Docker</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Linux</span>
       </div>
-      <div class="card">
-        <h3>Modern Styling</h3>
-        <p>CSS Variables and Flexbox make layout and theming effortless.</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2><span class="blue">#</span> DEPLOYED_PROJECTS</h2>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="security">Security</button>
+        </div>
       </div>
-      <div class="card">
-        <h3>Interactive</h3>
-        <p>Lightweight JavaScript handles user clicks and theme switching.</p>
+
+      <div class="grid-container">
+        <article class="card" data-category="security">
+          <div class="card-top">
+            <span class="folder-icon">[01]</span>
+            <a href="#" class="card-link">Source &nearr;</a>
+          </div>
+          <h3>NetScanner CLI</h3>
+          <p>Lightweight network packet sniffer and port scanner built with Python and raw sockets.</p>
+          <div class="card-tech">
+            <span>Python</span>
+            <span>Linux</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="web">
+          <div class="card-top">
+            <span class="folder-icon">[02]</span>
+            <a href="#" class="card-link">Live Demo &nearr;</a>
+          </div>
+          <h3>SynthWave IDE</h3>
+          <p>Browser-based code sandbox featuring real-time collaborative editing and live terminal output.</p>
+          <div class="card-tech">
+            <span>TypeScript</span>
+            <span>WebSockets</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="web">
+          <div class="card-top">
+            <span class="folder-icon">[03]</span>
+            <a href="#" class="card-link">Source &nearr;</a>
+          </div>
+          <h3>CryptoVault API</h3>
+          <p>Zero-knowledge encrypted secret manager with automated key rotation and audit logs.</p>
+          <div class="card-tech">
+            <span>Node.js</span>
+            <span>Docker</span>
+          </div>
+        </article>
       </div>
+    </section>
+
+    <section id="contact" class="contact-box">
+      <h2><span class="pink">&gt;</span> INITIATE_HANDSHAKE</h2>
+      <p>Have a project in mind or want to talk shop? Copy my address below.</p>
+      <button id="copy-email" class="btn-neon-blue" data-email="alex@sysdev.io">
+        Copy: alex@sysdev.io
+      </button>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 BrandName. Built from scratch.</p>
+    <p>EOF // Built with raw HTML, CSS &amp; JS &bull; 2026</p>
   </footer>
 
-  <!-- Links the JavaScript file at the bottom so HTML loads first -->
   <script src="script.js"></script>
 </body>
 </html>
