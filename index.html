@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Remnant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Modern Website</title>
+  <!-- Links the CSS file to style the page -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>I have no idea what I'm going to put here.</p>
+  <header class="navbar">
+    <div class="logo">BrandName</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <button id="theme-toggle" class="btn-outline">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Build Something Clean & Fast</h1>
+      <p>A simple, responsive starter template using pure HTML, CSS, and JavaScript.</p>
+      <button id="cta-btn" class="btn-primary">Get Started</button>
+    </section>
+
+    <section id="features" class="grid-container">
+      <div class="card">
+        <h3>Clean Structure</h3>
+        <p>Semantic HTML5 tags keep your content organized and accessible.</p>
+      </div>
+      <div class="card">
+        <h3>Modern Styling</h3>
+        <p>CSS Variables and Flexbox make layout and theming effortless.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive</h3>
+        <p>Lightweight JavaScript handles user clicks and theme switching.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrandName. Built from scratch.</p>
+  </footer>
+
+  <!-- Links the JavaScript file at the bottom so HTML loads first -->
+  <script src="script.js"></script>
 </body>
 </html>
