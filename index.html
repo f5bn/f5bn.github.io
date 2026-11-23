@@ -1,114 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dev@portfolio:~$</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Editable Website</title>
+  <!-- Links to your separate stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo"><span class="pink">&gt;_</span> sys.dev</div>
-    <nav>
-      <a href="#projects">// projects</a>
-      <a href="#stack">// stack</a>
-      <a href="#contact" class="btn-neon-pink">ping_me</a>
-    </nav>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">BrandName</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="status-badge">
-        <span class="pulse-dot"></span> SYSTEM ONLINE // OPEN TO WORK
-      </div>
-      <h1>Hi, I'm <span class="gradient-text">Alex Mercer</span></h1>
-      <p class="terminal-line">
-        <span class="blue">$</span> <span id="typewriter"></span><span class="cursor">_</span>
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-neon-blue">View_Builds()</a>
-        <a href="https://github.com" target="_blank" class="btn-outline">GitHub</a>
-      </div>
+    <section class="hero container">
+      <h1>Build Something Clean & Simple</h1>
+      <p>A lightweight, responsive starter website. Customize the entire look and feel inside your separate <code>style.css</code> file.</p>
+      <a href="#contact" class="btn">Get Started</a>
     </section>
 
-    <section id="stack" class="stack-section">
-      <h2><span class="pink">#</span> TECH_STACK</h2>
-      <div class="tags">
-        <span class="tag">TypeScript</span>
-        <span class="tag">React</span>
-        <span class="tag">Node.js</span>
-        <span class="tag">Python</span>
-        <span class="tag">Docker</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">Linux</span>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-      <div class="section-header">
-        <h2><span class="blue">#</span> DEPLOYED_PROJECTS</h2>
-        <div class="filter-group">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="security">Security</button>
+    <section id="services" class="features container">
+      <div class="grid">
+        <div class="card">
+          <h3>Separate Stylesheet</h3>
+          <p>Keep your content clean in HTML while controlling every color, font, and layout rule inside <code>style.css</code>.</p>
+        </div>
+        <div class="card">
+          <h3>Mobile Ready</h3>
+          <p>The layout automatically adjusts from desktop monitors down to phone screens without extra media queries.</p>
+        </div>
+        <div class="card">
+          <h3>Zero Dependencies</h3>
+          <p>Runs directly in any browser with pure HTML and CSS—no frameworks or build tools required.</p>
         </div>
       </div>
-
-      <div class="grid-container">
-        <article class="card" data-category="security">
-          <div class="card-top">
-            <span class="folder-icon">[01]</span>
-            <a href="#" class="card-link">Source &nearr;</a>
-          </div>
-          <h3>NetScanner CLI</h3>
-          <p>Lightweight network packet sniffer and port scanner built with Python and raw sockets.</p>
-          <div class="card-tech">
-            <span>Python</span>
-            <span>Linux</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="web">
-          <div class="card-top">
-            <span class="folder-icon">[02]</span>
-            <a href="#" class="card-link">Live Demo &nearr;</a>
-          </div>
-          <h3>SynthWave IDE</h3>
-          <p>Browser-based code sandbox featuring real-time collaborative editing and live terminal output.</p>
-          <div class="card-tech">
-            <span>TypeScript</span>
-            <span>WebSockets</span>
-          </div>
-        </article>
-
-        <article class="card" data-category="web">
-          <div class="card-top">
-            <span class="folder-icon">[03]</span>
-            <a href="#" class="card-link">Source &nearr;</a>
-          </div>
-          <h3>CryptoVault API</h3>
-          <p>Zero-knowledge encrypted secret manager with automated key rotation and audit logs.</p>
-          <div class="card-tech">
-            <span>Node.js</span>
-            <span>Docker</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-box">
-      <h2><span class="pink">&gt;</span> INITIATE_HANDSHAKE</h2>
-      <p>Have a project in mind or want to talk shop? Copy my address below.</p>
-      <button id="copy-email" class="btn-neon-blue" data-email="alex@sysdev.io">
-        Copy: alex@sysdev.io
-      </button>
     </section>
   </main>
 
   <footer>
-    <p>EOF // Built with raw HTML, CSS &amp; JS &bull; 2026</p>
+    <p>&copy; 2026 BrandName. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
